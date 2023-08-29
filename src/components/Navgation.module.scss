@@ -1,0 +1,39 @@
+ul > li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li {
+    padding: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 10px 50px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social > div {
+    padding: 5px;
+}
