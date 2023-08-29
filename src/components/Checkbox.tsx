@@ -1,0 +1,19 @@
+import { checkboxAnatomy } from '@chakra-ui/anatomy'
+import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(checkboxAnatomy.keys)
+
+const circular = definePartsStyle({
+  control: defineStyle({
+    rounded: 'm',
+    _focus: {
+        bg: 'white',
+        color: 'black'
+    }
+  })
+})
+
+export const Checkbox = defineMultiStyleConfig({
+  variants: { circular },
+})

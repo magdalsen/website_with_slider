@@ -1,0 +1,31 @@
+
+.dotActive > button {
+    width: 15px;
+    height: 15px;
+    background-color: #AFAFAF;
+    margin: 4px;
+}
+
+.carousel__dot--selected {
+    background-color: #FF4359;
+}
+
+.galeriaHeader {
+    margin: 150px 0 0 0;
+}
+
+.galeriaHeader > h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 0 80px 0 80px;
+    font-weight: 800;
+    letter-spacing: 19.2px;
+    line-height: 2.4;
+    border-bottom: 3px solid #FF4359;
+    padding: 0 0 30px 0;
+    display: inline;
+}
+
+.galeriaSlider {
+    padding: 50px 0 0 0;
+}

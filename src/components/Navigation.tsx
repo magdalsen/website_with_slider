@@ -2,6 +2,7 @@ import style from './Navgation.module.scss'
 import { Button } from "@chakra-ui/react"
 import { Logo } from "./Logo"
 import { HashLink } from 'react-router-hash-link'
+import { ContactForm } from './ContactForm'
 
 export const Navigation = () => {
     const links = [
@@ -16,10 +17,6 @@ export const Navigation = () => {
         {
             name: 'GALERIA',
             link: '/#galeria'
-        },
-        {
-            name: 'KONTAKT',
-            link: '/#kontakt'
         }
     ];
 
@@ -48,14 +45,18 @@ export const Navigation = () => {
                         {links.map((elem) => (
                             <HashLink
                                 scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
-                                to={`${elem.link}`}>
+                                to={`${elem.link}`}
+                                key={elem.name}>
                                 <Button variant="solid" size="sm">{elem.name}</Button>
                             </HashLink>
                         ))}
+                        <li>
+                            <ContactForm />
+                        </li>
                     </ul>
                     <div className={style.social}>
                         {social.map((el) => (
-                            <div>
+                            <div key={el.alt}>
                                 <img src={el.src} alt={el.alt} />
                             </div>
                         ))}

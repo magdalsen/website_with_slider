@@ -36,7 +36,16 @@ export const Button = defineStyleConfig({
         outline: 'none'
       }
     },
-    
+    filled: {
+      bg: '#FF4359',
+      borderRadius: 5,
+      color: 'white',
+      w: '90%',
+      letterSpacing: '6px',
+      _focus: {
+        outline: 'none'
+      }
+    }
   },
   // The default size and variant values
   defaultProps: {
