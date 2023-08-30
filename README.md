@@ -13,6 +13,10 @@ Project is simple website with image slider and contact form.
 - Pure React Carousel
 - Prettier, Eslint
 
+## Run
+
+Local: npm run dev
+
 ## Author
 
 E-mail: magdal.sen@gmail.com
