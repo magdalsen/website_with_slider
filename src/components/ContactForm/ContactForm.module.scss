@@ -1,6 +1,7 @@
+@import '../../styles/_fonts.scss';
 
 .errorBox {
-    color: #FF4359;
+    color: $dark-pink;
     font-weight: 500;
     margin: 10px 0 0 0;
 }
@@ -25,5 +26,5 @@ form div {
 }
 
 .star {
-    color: #FF4359;
+    color: $dark-pink;
 }

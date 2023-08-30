@@ -1,5 +1,5 @@
-import LOGO_Placeholder from '../assets/LOGO_Placeholder.svg'
-import '../styles/_mobile.scss'
+import LOGO_Placeholder from '../../assets/LOGO_Placeholder.svg'
+import '../../styles/_mobile.scss'
 import { HashLink } from 'react-router-hash-link'
 
 export const Logo = () => {

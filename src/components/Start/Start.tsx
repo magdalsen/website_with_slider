@@ -1,5 +1,5 @@
-import { About } from "./About"
-import { Gallery } from "./Gallery"
+import { About } from "../About/About"
+import { Gallery } from "../Gallery/Gallery"
 import style from './Start.module.scss'
 
 export const Start = () => {

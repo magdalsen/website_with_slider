@@ -5,10 +5,10 @@ import './index.scss'
 import { ChakraProvider } from '@chakra-ui/react'
 
 import { extendTheme } from '@chakra-ui/react'
-import { Button } from './components/Button.tsx'
-import { Fonts } from './components/Fonts.tsx'
-import { Modal } from './components/Modal.tsx'
-import { Checkbox } from './components/Checkbox.tsx'
+import { Button } from './components/customStyles/Button.tsx'
+import { Fonts } from './components/customStyles/Fonts.tsx'
+import { Modal } from './components/customStyles/Modal.tsx'
+import { Checkbox } from './components/customStyles/Checkbox.tsx'
 
 const customComponents = extendTheme({
   components: {

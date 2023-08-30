@@ -1,10 +1,10 @@
 import style from './Navgation.module.scss'
 import { Button } from "@chakra-ui/react"
-import { Logo } from "./Logo"
+import { Logo } from "../Logo/Logo"
 import { HashLink } from 'react-router-hash-link'
-import { ContactForm } from './ContactForm'
+import { ContactForm } from '../ContactForm/ContactForm'
 import { useEffect, useState } from 'react'
-import { Hamburger } from './Hamburger'
+import { Hamburger } from '../Hamburger/Hamburger'
 
 export const Navigation = () => {
     const links = [

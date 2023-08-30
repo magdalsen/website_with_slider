@@ -1,7 +1,7 @@
 import { HamburgerIcon } from "@chakra-ui/icons"
 import { Menu, MenuButton, IconButton, MenuList, Button } from "@chakra-ui/react"
 import { HashLink } from "react-router-hash-link"
-import { ContactForm } from "./ContactForm"
+import { ContactForm } from "../ContactForm/ContactForm"
 import style from './Hamburger.module.scss'
 
 export const Hamburger = (links: { name: string, link: string }[]) => {

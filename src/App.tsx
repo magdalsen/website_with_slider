@@ -1,10 +1,10 @@
 import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Start } from './components/Start'
-import { About } from './components/About'
-import { Gallery } from './components/Gallery'
-import { Contact } from './components/Contact'
-import { Navigation } from './components/Navigation'
+import { Start } from './components/Start/Start'
+import { About } from './components/About/About'
+import { Gallery } from './components/Gallery/Gallery'
+import { Contact } from './components/Contact/Contact'
+import { Navigation } from './components/Navigation/Navigation'
 
 function App() {
   const routes = [

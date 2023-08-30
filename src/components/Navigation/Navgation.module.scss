@@ -1,5 +1,7 @@
+@import '../../styles/_fonts.scss';
+
 header {
-    border-bottom: 5px solid #FF4359;
+    border-bottom: 5px solid $dark-pink;
 }
 
 ul > li {

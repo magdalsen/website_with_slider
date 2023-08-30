@@ -1,3 +1,9 @@
+@import '../../styles/_fonts.scss';
+
+@mixin omnie {
+    text-align: left;
+    padding: 0 80px 0 80px;
+}
 
 .omnie {
     display: flex;
@@ -17,12 +23,11 @@
 
 .omnieText {
     font-size: 16px;
-    text-align: left;
-    padding: 0 80px 0 80px;
+    @include omnie;
 }
 
 .omnieText > p {
-    border-top: 3px solid #FF4359;
+    border-top: 3px solid $dark-pink;
     padding: 30px 0 0 0;
     line-height: 1.9;
     font-weight: 300;
@@ -30,11 +35,10 @@
 
 .omnie > div > h2 {
     font-size: 48px;
-    text-align: left;
-    padding: 0 80px 0 80px;
+    @include omnie;
     font-weight: 800;
     letter-spacing: 19.2px;
     line-height: 2.4;
 }
 
-@import '../styles/_mobile.scss';
+@import '../../styles/_mobile.scss';

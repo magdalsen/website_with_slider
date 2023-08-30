@@ -2,7 +2,7 @@ import { Button, FormControl, Input, Modal, ModalBody, ModalCloseButton, ModalCo
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Checkbox } from '@chakra-ui/react';
-import { schemaContact } from "./validations/validation";
+import { schemaContact } from "../../components/validations/validation";
 import { yupResolver } from "@hookform/resolvers/yup";
 import style from './ContactForm.module.scss';
 
