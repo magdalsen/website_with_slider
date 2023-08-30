@@ -10,7 +10,7 @@ export interface FormValues {
     name: string;
     surname: string;
     email: string;
-    checkbox: boolean;
+    checkbox?: boolean | undefined;
 }
 
 export function ContactForm() {
