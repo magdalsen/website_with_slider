@@ -1,21 +1,22 @@
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  DotGroup,
-  Image,
-  Dot,
   ButtonBack,
   ButtonNext,
+  CarouselProvider,
+  Dot,
+  DotGroup,
+  Image,
+  Slide,
+  Slider,
 } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import style from './Gallery.module.scss';
-import './Gallery.module.scss';
-import { slides } from '../constants/constants';
-import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
-export const Gallery = () => {
-  return (
+import { slides } from '../constants/constants';
+
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import './Gallery.module.scss';
+import style from './Gallery.module.scss';
+
+export const Gallery = () => (
     <>
       <section id='gallery'>
         <div className={style.galleryHeader}>
@@ -48,24 +49,22 @@ export const Gallery = () => {
             </div>
             <DotGroup
               className={style.dotActive}
-              renderDots={(props) => {
-                return (
+              renderDots={(props) => (
                   <>
                     {slides.map((el) => (
                       <Dot
                         slide={el.number}
+                        key={el.number}
                         style={{
                           backgroundColor: props.currentSlide === el.number ? '#FF4359' : '#AFAFAF',
                         }}
-                      ></Dot>
+                       />
                     ))}
                   </>
-                );
-              }}
-            ></DotGroup>
+                )}
+             />
           </CarouselProvider>
         </div>
       </section>
     </>
   );
-};

@@ -1,7 +1,6 @@
 import style from './About.module.scss';
 
-export const About = () => {
-  return (
+export const About = () => (
     <>
       <section id='about'>
         <div className={style.about}>
@@ -31,4 +30,3 @@ export const About = () => {
       </section>
     </>
   );
-};

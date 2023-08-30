@@ -1,6 +1,6 @@
-import { Start } from '../Start/Start';
 import { About } from '../About/About';
 import { Gallery } from '../Gallery/Gallery';
+import { Start } from '../Start/Start';
 
 export const routes = [
   {

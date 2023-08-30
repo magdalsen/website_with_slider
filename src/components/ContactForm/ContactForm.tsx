@@ -1,3 +1,5 @@
+import React from 'react';
+import { Controller, useForm } from 'react-hook-form';
 import {
   Button,
   FormControl,
@@ -10,14 +12,14 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
-import React from 'react';
-import { Controller, useForm } from 'react-hook-form';
 import { Checkbox } from '@chakra-ui/react';
-import { FormValues, schemaContact } from '../../components/validations/validation';
 import { yupResolver } from '@hookform/resolvers/yup';
+
+import { FormValues, schemaContact } from '../../components/validations/validation';
+
 import style from './ContactForm.module.scss';
 
-export function ContactForm() {
+export const ContactForm = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);

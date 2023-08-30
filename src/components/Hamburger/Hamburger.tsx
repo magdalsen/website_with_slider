@@ -1,11 +1,12 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { Menu, MenuButton, IconButton, MenuList, Button } from '@chakra-ui/react';
 import { HashLink } from 'react-router-hash-link';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { Button,IconButton, Menu, MenuButton, MenuList } from '@chakra-ui/react';
+
 import { ContactForm } from '../ContactForm/ContactForm';
+
 import style from './Hamburger.module.scss';
 
-export const Hamburger = (links: { name: string; link: string }[]) => {
-  return (
+export const Hamburger = (links: { name: string; link: string }[]) => (
     <Menu>
       <MenuButton as={IconButton} aria-label='Options' icon={<HamburgerIcon />} variant='outline' />
       <MenuList>
@@ -47,4 +48,3 @@ export const Hamburger = (links: { name: string; link: string }[]) => {
       </MenuList>
     </Menu>
   );
-};

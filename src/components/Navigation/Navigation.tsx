@@ -1,11 +1,13 @@
-import style from './Navgation.module.scss';
-import { Button } from '@chakra-ui/react';
-import { Logo } from '../Logo/Logo';
-import { HashLink } from 'react-router-hash-link';
-import { ContactForm } from '../ContactForm/ContactForm';
 import { useEffect, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { Button } from '@chakra-ui/react';
+
+import { links, social,WIDTH_TO_DISPLAY_HAMBURGER } from '../constants/constants';
+import { ContactForm } from '../ContactForm/ContactForm';
 import { Hamburger } from '../Hamburger/Hamburger';
-import { WIDTH_TO_DISPLAY_HAMBURGER, links, social } from '../constants/constants';
+import { Logo } from '../Logo/Logo';
+
+import style from './Navgation.module.scss';
 
 export const Navigation = () => {
   const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
