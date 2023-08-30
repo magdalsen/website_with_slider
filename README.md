@@ -16,6 +16,7 @@ Project is simple website with image slider and contact form.
 ## Run
 
 Local: npm run dev
+Deploy: https://website-with-slider.vercel.app/
 
 ## Author
 
