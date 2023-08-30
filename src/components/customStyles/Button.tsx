@@ -1,4 +1,4 @@
-import { defineStyleConfig } from '@chakra-ui/react'
+import { defineStyleConfig } from '@chakra-ui/react';
 
 export const Button = defineStyleConfig({
   // The styles all button have in common
@@ -12,7 +12,7 @@ export const Button = defineStyleConfig({
       fontSize: '10px',
       px: 5, // <-- px is short for paddingLeft and paddingRight
       py: 5, // <-- py is short for paddingTop and paddingBottom
-      minW: 160
+      minW: 160,
     },
     md: {
       fontSize: 'md',
@@ -30,11 +30,11 @@ export const Button = defineStyleConfig({
         borderRadius: 50,
         bg: '#fffffff',
         outline: 'none',
-        boxShadow: '0 7px 11px -1px #FC435933'
+        boxShadow: '0 7px 11px -1px #FC435933',
       },
       _focus: {
-        outline: 'none'
-      }
+        outline: 'none',
+      },
     },
     filled: {
       bg: '#FF4359',
@@ -46,13 +46,13 @@ export const Button = defineStyleConfig({
         outline: 'none',
       },
       _hover: {
-        letterSpacing: '14px'
-      }
-    }
+        letterSpacing: '14px',
+      },
+    },
   },
   // The default size and variant values
   defaultProps: {
     size: 'md',
     variant: 'solid',
   },
-})
+});

@@ -1,21 +1,21 @@
-import './App.scss'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Navigation } from './components/Navigation/Navigation'
-import { routes } from './components/constants/routes'
+import './App.scss';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Navigation } from './components/Navigation/Navigation';
+import { routes } from './components/constants/routes';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navigation />
+        <Navigation />
         <Routes>
-            {routes.map(({ path, Component }) => (
-              <Route index path={path} key={path} element={<Component />} />
-            ))}
+          {routes.map(({ path, Component }) => (
+            <Route index path={path} key={path} element={<Component />} />
+          ))}
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

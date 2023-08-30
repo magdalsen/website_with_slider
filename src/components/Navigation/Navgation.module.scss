@@ -1,49 +1,49 @@
 @import '../../styles/_fonts.scss';
 
 header {
-    border-bottom: 5px solid $dark-pink;
+  border-bottom: 5px solid $dark-pink;
 }
 
 ul > li {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 li {
-    padding: 10px;
+  padding: 10px;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: white;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 10px 50px;
 }
 
 nav > ul {
-    margin: 10px;
+  margin: 10px;
 }
 
 .social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .social > div {
-    padding: 5px;
+  padding: 5px;
 }

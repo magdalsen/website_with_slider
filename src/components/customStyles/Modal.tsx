@@ -1,8 +1,7 @@
-import { modalAnatomy as parts } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers } from '@chakra-ui/styled-system'
+import { modalAnatomy as parts } from '@chakra-ui/anatomy';
+import { createMultiStyleConfigHelpers } from '@chakra-ui/styled-system';
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(parts.keys);
 
 const baseStyle = definePartsStyle({
   dialog: {
@@ -12,10 +11,10 @@ const baseStyle = definePartsStyle({
     justifyContent: 'center',
     alignItems: 'center',
     color: '#AFAFAF',
-    padding: '105px'
-  }
-})
+    padding: '105px',
+  },
+});
 
 export const Modal = defineMultiStyleConfig({
   baseStyle,
-})
+});

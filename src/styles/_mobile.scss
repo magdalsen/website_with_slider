@@ -1,74 +1,72 @@
 @media (max-width: 1200px) {
-    .aboutImg, .aboutInfo {
-        width: 50%;
-    }
+  .aboutImg,
+  .aboutInfo {
+    width: 50%;
+  }
 
-    .aboutImg > img {
-        min-width: 0;
-        min-height: 0;
-    }
+  .aboutImg > img {
+    min-width: 0;
+    min-height: 0;
+  }
 }
 
 @media (max-width: 1090px) {
-    .mainPhoto, .aboutPhoto {
-        object-fit: cover;
-        max-width: 100%;
-        max-height: 100vh;
-        height: auto;
-    }
+  .mainPhoto,
+  .aboutPhoto {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+  }
 
-    .aboutText > p {
-        font-size: 13px;
-    }
+  .aboutText > p {
+    font-size: 13px;
+  }
 
-    .about > div > h2 {
-        font-size: 15px;
-        margin: 20px 0 0 0;
-    }
-
+  .about > div > h2 {
+    font-size: 15px;
+    margin: 20px 0 0 0;
+  }
 }
 
 @media (max-width: 950px) {
-    .about {
-        display: block;
-    }
+  .about {
+    display: block;
+  }
 
-    .aboutImg, .aboutInfo {
-        width: 100%;
-    }
+  .aboutImg,
+  .aboutInfo {
+    width: 100%;
+  }
 
-    .galleryHeader > h2 {
-        display: flex;
-        font-size: 15px;
-        width: 80%;
-        margin: 0 0 0 80px
-    }
-    
+  .galleryHeader > h2 {
+    display: flex;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 0 0 80px;
+  }
 }
 
 @media (max-width: 774px) and (min-width: 570px) {
-    .galleryHeader > h2 {
-        width: 77%;
-    }
-    
+  .galleryHeader > h2 {
+    width: 77%;
+  }
 }
 
 @media (max-width: 774px) {
-    #logo {
-        display: none;
-    }
+  #logo {
+    display: none;
+  }
 
-    .galleryHeader > h2 {
-        margin: 0 0 0 80px;
-        display: flex;
-        padding: 0 0 3px 0;
-    }
-    
+  .galleryHeader > h2 {
+    margin: 0 0 0 80px;
+    display: flex;
+    padding: 0 0 3px 0;
+  }
 }
 
 @media (max-width: 500px) {
-    .galleryHeader > h2 {
-        width: 65%;
-    }
-    
+  .galleryHeader > h2 {
+    width: 65%;
+  }
 }
