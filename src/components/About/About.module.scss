@@ -1,19 +1,20 @@
 @import '../../styles/_fonts.scss';
 
-@mixin omnie {
+@mixin about {
     text-align: left;
     padding: 0 80px 0 80px;
 }
 
-.omnie {
+.about {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: row;
-    margin: 150px 0 0 0;
+    margin: 50px 0 0 0;
+    padding-top: 100px;
 }
 
-.omniePhoto {
+.aboutPhoto {
     top: 1034px;
     left: 0px;
     min-width: 760px;
@@ -21,21 +22,21 @@
     opacity: 1;
 }
 
-.omnieText {
+.aboutText {
     font-size: 16px;
-    @include omnie;
+    @include about;
 }
 
-.omnieText > p {
+.aboutText > p {
     border-top: 3px solid $dark-pink;
     padding: 30px 0 0 0;
     line-height: 1.9;
     font-weight: 300;
 }
 
-.omnie > div > h2 {
+.about > div > h2 {
     font-size: 48px;
-    @include omnie;
+    @include about;
     font-weight: 800;
     letter-spacing: 19.2px;
     line-height: 2.4;

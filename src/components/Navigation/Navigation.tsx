@@ -5,38 +5,9 @@ import { HashLink } from 'react-router-hash-link'
 import { ContactForm } from '../ContactForm/ContactForm'
 import { useEffect, useState } from 'react'
 import { Hamburger } from '../Hamburger/Hamburger'
+import { WIDTH_TO_DISPLAY_HAMBURGER, links, social } from '../constants/constants'
 
 export const Navigation = () => {
-    const links = [
-        {
-            name: 'START',
-            link: '/#top'
-        },
-        {
-            name: 'O MNIE',
-            link: '/#omnie'
-        },
-        {
-            name: 'GALERIA',
-            link: '/#galeria'
-        }
-    ];
-
-    const social = [
-        {
-            src: "../../images/facebook.svg",
-            alt: "facebook_img"
-        },
-        {
-            src: "../../images/instagram.svg",
-            alt: "instagram_img"
-        },
-        {
-            src: "../../images/youtube.svg",
-            alt: "youtube_img"
-        }
-    ];
-
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
         window.innerHeight,
@@ -62,7 +33,7 @@ export const Navigation = () => {
                         <li>
                             <Logo />
                         </li>
-                        {windowSize[0] <= 774 ? <><Hamburger {...links} /></> : 
+                        {windowSize[0] <= WIDTH_TO_DISPLAY_HAMBURGER ? <><Hamburger {...links} /></> : 
                             <>
                                 {links.map((elem) => (
                                 <HashLink

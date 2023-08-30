@@ -2,22 +2,15 @@ import { Button, FormControl, Input, Modal, ModalBody, ModalCloseButton, ModalCo
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Checkbox } from '@chakra-ui/react';
-import { schemaContact } from "../../components/validations/validation";
+import { FormValues, schemaContact } from "../../components/validations/validation";
 import { yupResolver } from "@hookform/resolvers/yup";
 import style from './ContactForm.module.scss';
 
-export interface FormValues {
-    name: string;
-    surname: string;
-    email: string;
-    checkbox?: boolean | undefined;
-}
-
 export function ContactForm() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
   
-    const initialRef = React.useRef(null)
-    const finalRef = React.useRef(null)
+    const initialRef = React.useRef(null);
+    const finalRef = React.useRef(null);
 
     const {
       control,
@@ -28,7 +21,7 @@ export function ContactForm() {
           name: '',
           surname: '',
           email: '',
-          checkbox: false
+          accept: false
       },
       resolver: yupResolver(schemaContact),
       mode: "onBlur"
@@ -85,8 +78,8 @@ export function ContactForm() {
                     <FormControl mt={4}>
                       <Controller
                       control={control}
-                      name='checkbox'
-                      key='checkbox'
+                      name='accept'
+                      key='accept'
                       defaultValue={false}
                       render={({ field: { onChange, value, ref } }) => (
                         <Checkbox
@@ -107,7 +100,7 @@ export function ContactForm() {
                 WYŚLIJ
               </Button>
               <div className={style.errorBox}>
-                <p>{errors.name?.message || errors.surname?.message || errors.email?.message || errors.checkbox?.message}</p>
+                <p>{errors.name?.message || errors.surname?.message || errors.email?.message || errors.accept?.message}</p>
               </div>
             </ModalFooter>
             </form>

@@ -43,7 +43,10 @@ export const Button = defineStyleConfig({
       w: '90%',
       letterSpacing: '6px',
       _focus: {
-        outline: 'none'
+        outline: 'none',
+      },
+      _hover: {
+        letterSpacing: '14px'
       }
     }
   },

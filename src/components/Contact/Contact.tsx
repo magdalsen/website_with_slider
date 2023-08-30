@@ -2,7 +2,7 @@
 export const Contact = () => {
     return (
         <>
-            <section id="kontakt">Kontakt</section>
+            <section id="contact">Kontakt</section>
         </>
     )
 }

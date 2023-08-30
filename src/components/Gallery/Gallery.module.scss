@@ -8,11 +8,12 @@
     border-radius: 50%;
 }
 
-.galeriaHeader {
-    margin: 150px 0 0 0;
+.galleryHeader {
+    margin: 50px 0 0 0;
+    padding-top: 100px;
 }
 
-.galeriaHeader > h2 {
+.galleryHeader > h2 {
     font-size: 48px;
     text-align: center;
     padding: 0 80px 0 80px;
@@ -24,8 +25,23 @@
     display: inline;
 }
 
-.galeriaSlider {
+.gallerySlider {
     padding: 50px 0 0 0;
+}
+
+#gallerySliderBox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#gallerySliderBox > * {
+    margin: 10px;
+}
+
+.gallerySliderSlides {
+    width: 70%;
 }
 
 @import '../../styles/_mobile.scss';
