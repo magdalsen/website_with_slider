@@ -1,6 +1,5 @@
 
 .mainPhoto {
-    border-top: 5px solid #FF4359;
     top: 0px;
     left: 0px;
     width: 1920px;
@@ -8,3 +7,5 @@
     object-fit: none;
     opacity: 1;
 }
+
+@import '../styles/_mobile.scss';

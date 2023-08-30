@@ -3,6 +3,8 @@ import { Button } from "@chakra-ui/react"
 import { Logo } from "./Logo"
 import { HashLink } from 'react-router-hash-link'
 import { ContactForm } from './ContactForm'
+import { useEffect, useState } from 'react'
+import { Hamburger } from './Hamburger'
 
 export const Navigation = () => {
     const links = [
@@ -33,7 +35,25 @@ export const Navigation = () => {
             src: "../../images/youtube.svg",
             alt: "youtube_img"
         }
-    ]
+    ];
+
+    const [windowSize, setWindowSize] = useState([
+        window.innerWidth,
+        window.innerHeight,
+      ]);
+    
+      useEffect(() => {
+        const handleWindowResize = () => {
+          setWindowSize([window.innerWidth, window.innerHeight]);
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      }, []);
+      
     return (
         <>
             <header>
@@ -42,17 +62,21 @@ export const Navigation = () => {
                         <li>
                             <Logo />
                         </li>
-                        {links.map((elem) => (
-                            <HashLink
-                                scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
-                                to={`${elem.link}`}
-                                key={elem.name}>
-                                <Button variant="solid" size="sm">{elem.name}</Button>
-                            </HashLink>
-                        ))}
-                        <li>
-                            <ContactForm />
-                        </li>
+                        {windowSize[0] <= 774 ? <><Hamburger {...links} /></> : 
+                            <>
+                                {links.map((elem) => (
+                                <HashLink
+                                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+                                    to={`${elem.link}`}
+                                    key={elem.name}>
+                                    <Button variant="solid" size="sm">{elem.name}</Button>
+                                </HashLink>
+                            ))}
+                            <li>
+                                <ContactForm />
+                            </li>
+                            </>
+                        }
                     </ul>
                     <div className={style.social}>
                         {social.map((el) => (

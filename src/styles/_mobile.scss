@@ -1,0 +1,74 @@
+@media (max-width: 1200px) {
+    .omnieImg, .omnieInfo {
+        width: 50%;
+    }
+
+    .omnieImg > img {
+        min-width: 0;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 1090px) {
+    .mainPhoto, .omniePhoto {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100vh;
+        height: auto;
+    }
+
+    .omnieText > p {
+        font-size: 13px;
+    }
+
+    .omnie > div > h2 {
+        font-size: 15px;
+        margin: 20px 0 0 0;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .omnie {
+        display: block;
+    }
+
+    .omnieImg, .omnieInfo {
+        width: 100%;
+    }
+
+    .galeriaHeader > h2 {
+        display: flex;
+        font-size: 15px;
+        width: 80%;
+        margin: 0 0 0 80px
+    }
+    
+}
+
+@media (max-width: 774px) and (min-width: 570px) {
+    .galeriaHeader > h2 {
+        width: 77%;
+    }
+    
+}
+
+@media (max-width: 774px) {
+    #logo {
+        display: none;
+    }
+
+    .galeriaHeader > h2 {
+        margin: 0 0 0 80px;
+        display: flex;
+        padding: 0 0 3px 0;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .galeriaHeader > h2 {
+        width: 65%;
+    }
+    
+}

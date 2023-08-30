@@ -4,10 +4,7 @@
     height: 15px;
     background-color: #AFAFAF;
     margin: 4px;
-}
-
-.carousel__dot--selected {
-    background-color: #FF4359;
+    border-radius: 50%;
 }
 
 .galeriaHeader {
@@ -29,3 +26,5 @@
 .galeriaSlider {
     padding: 50px 0 0 0;
 }
+
+@import '../styles/_mobile.scss';

@@ -1,3 +1,7 @@
+header {
+    border-bottom: 5px solid #FF4359;
+}
+
 ul > li {
     list-style: none;
 }
@@ -24,6 +28,10 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0 50px 10px 50px;
+}
+
+nav > ul {
+    margin: 10px;
 }
 
 .social {
