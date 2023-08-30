@@ -34,7 +34,7 @@ export const Navigation = () => {
             </li>
             {windowSize[0] <= WIDTH_TO_DISPLAY_HAMBURGER ? (
               <>
-                <Hamburger {...links} />
+                <Hamburger />
               </>
             ) : (
               <>
